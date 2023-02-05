@@ -12,5 +12,7 @@ public class EmployeeComponent {
 
     public void employeeWelocme(String name) {
         logger.info("Greeting {}}!",name);
+        logger.info("Hello Employee!");
+
     }
 }

@@ -36,4 +36,11 @@ public class EmployeeComponent {
         Integer i = emp.getId();
         return i == 1  ? 1 : employee.getId();
     }
+
+    //develop rebase
+    public int generateId2() {
+        Employee emp = new Employee();
+        Integer i = emp.getId();
+        return i == 3  ? 3 : employee.getId();
+    }
 }

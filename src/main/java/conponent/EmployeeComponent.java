@@ -30,4 +30,15 @@ public class EmployeeComponent {
         }
 
     }
+
+    //feature
+    public String employeeName ()
+    {
+        Employee emp = new Employee();
+        String name = emp.getName();
+        if (StringUtils.isEmpty(name)){
+            name = "name is empty";
+        }
+        return name;
+    }
 }

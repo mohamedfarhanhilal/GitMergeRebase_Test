@@ -24,14 +24,16 @@ public class EmployeeComponent {
         Employee emp = new Employee();
         emp.setName(name);
         logger.info("Employee added to the pojo {}!",emp.toString());
-//        develop
-        Employee emp = new Employee();
-        emp.setName(name);
-        logger.info("Employee added to the pojo {}!",emp.toString());
-
+//
         if (StringUtils.isEmpty(employee.getName())) {
             logger.info("Object empty");
         }
+    }
 
+    //develop
+    public int generateId() {
+        Employee emp = new Employee();
+        Integer i = emp.getId();
+        return i == 1  ? 1 : employee.getId();
     }
 }

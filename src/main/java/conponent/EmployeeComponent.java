@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class EmployeeComponent {
     private static final Logger logger = LogManager.getLogger(EmployeeComponent.class);
 
-    public void employeeWelocme() {
-        logger.info("Hello Employee!");
+    public void employeeWelocme(String name) {
+        logger.info("Greeting {}}!",name);
     }
 }

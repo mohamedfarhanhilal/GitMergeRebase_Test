@@ -11,13 +11,19 @@ import org.springframework.util.StringUtils;
 
 @Service
 public class EmployeeComponent {
+
+
     private static final Logger logger = LogManager.getLogger(EmployeeComponent.class);
 
     @Autowired
     Employee employee;
     public void employeeWelocme(String name) {
-        logger.info("Greeting {}}!",name);
+        logger.info("Greeting {}!",name);
         logger.info("Hello Employee!");
+//        develop
+        Employee emp = new Employee();
+        emp.setName(name);
+        logger.info("Employee added to the pojo {}!",emp.toString());
 
         if (StringUtils.isEmpty(employee.getName())) {
             logger.info("Object empty");
